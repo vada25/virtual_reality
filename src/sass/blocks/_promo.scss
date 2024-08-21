@@ -9,7 +9,6 @@
         padding: 20px 84px;
         text-align: center;
         align-items: center;
-        font-weight: 700;
         z-index: 20;
         &__items {
             list-style-type: none; 
@@ -56,9 +55,6 @@
                 padding-top: 50px;
             }            
             &__info {
-                color: #fff;
-                font-size: 16px;
-                font-weight: 400;
                 margin-top: 35px;                
             }
             &__access {
@@ -110,7 +106,6 @@
         box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
         justify-content: space-between;
         align-items: center;
-        
         &__visit, &__call, &__msg {
             position: relative;
             display: flex;
@@ -125,8 +120,6 @@
                     padding-left: 10px;
                 }
             }
-        }
-        
-        
+        } 
     }
 }

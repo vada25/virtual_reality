@@ -1,0 +1,23 @@
+.btn {
+    text-transform: uppercase;
+    background-color: #343045;
+    color: #fff;
+    height: 48px;
+    width: 155px;
+    border-radius: 40px;
+    border: 2px #FFF;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background 3s ease, transform 1s ease;
+    
+    &:hover {
+        background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+        transform: scale(1.03);
+    }
+    &__main__light {
+        background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+        &__big {
+            width: 255px;
+        }
+    }
+}

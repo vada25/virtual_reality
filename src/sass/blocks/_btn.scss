@@ -18,5 +18,16 @@
         &__big {
             width: 255px;
         }
+        &__rouded {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+            color: black !important;
+            border: solid 5px;
+            border-radius: 100%;
+            border-color: rgba(14, 14, 14, 0.32);
+            left: 47%;
+        }
     }
 }

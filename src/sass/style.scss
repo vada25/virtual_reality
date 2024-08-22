@@ -15,7 +15,17 @@
     margin: 0 auto;
     background-color: #302C42;
 }
+.divider {
+    width: 70%;
+    height: 2px;
+    background-color: rgba(192, 183, 232, 0.33);
+    margin: 0 auto;
+}
 
 @import 'blocks/promo';
 @import 'blocks/btn';
 @import 'blocks/fontsize';
+@import 'blocks/intro';
+@import 'blocks/cards';
+@import 'blocks/use';
+@import 'blocks/build';

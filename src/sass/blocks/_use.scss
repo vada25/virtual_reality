@@ -1,0 +1,19 @@
+.use {
+    margin: 0 auto;
+    width: 100%;
+    &__header {
+        text-align: center;
+        margin: 0 84px;
+        background: url('../img/pexels_bgnd.png') center/cover no-repeat;
+        border-radius: 100px;
+        padding: 50px 0;
+        z-index: 10;
+        position: relative;
+        }
+    &__brand {
+        padding: 20px 84px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,78 @@
+.build {
+    margin: 0 auto;
+    width: 100%;
+    &__top {
+        display: flex;
+        position: relative;
+        padding: 50px 84px 50px 84px;
+        &__arrow {
+            position: absolute;
+            left: 410px;
+            bottom: 45px;
+            & img {
+                margin-left: -35px;
+            }
+        }
+    }
+    &__descr {
+        width: 50%;
+        margin-left: auto;
+    }
+    &__bottom {
+        &__line {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            overflow: hidden;
+            &__round {
+                margin-top: 50px;
+
+                &__name {
+
+                    width: 160px;
+                    height: 160px;
+                    text-align: center;
+                    background: linear-gradient(251deg, #C0B7E8 12.87%, #8176AF 89.33%);
+                    border-radius: 100%;
+                    padding-top: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    z-index: 10;
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: -15px;
+                        left: -15px;
+                        right: -15px;
+                        bottom: -15px;
+                        border: solid 10px rgba(13, 13, 13, 0.32);
+                        border-radius: 50%; 
+                        box-sizing: border-box;
+                    }
+                }
+                &__descr {
+                    width: 180px;
+                    position: relative;
+                    margin: 40px 0;
+                    padding-left: 20px;
+                    & h5:before {
+                        content: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2267%22%20height%3D%2267%22%20viewBox%3D%220%200%2067%2067%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M47.4584%2033.4999L19.5417%2033.4999M47.4584%2033.4999L36.2917%2044.6666M47.4584%2033.4999L36.2917%2022.3333%22%20stroke%3D%22%23C0B7E8%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3C/svg%3E');
+                        position: absolute;
+                        left: -60px;
+                        top: -20px;
+                    }
+                }
+            }
+        &:after {
+            content: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%221440%22%20height%3D%22169%22%20viewBox%3D%220%200%201440%20169%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M-9%2021.7335C6.47753%2071.4205%2088.0505%20181.243%20245.37%20106.768C350.5%2057%20405.361%202.72575%20539.107%2091.2619C672.853%20179.798%20776.317%20173.796%20841.423%2082.2582C906.53%20-9.27916%201076.11%20-33.7892%201139.7%2074.7552C1203.29%20183.3%201417.79%20196.305%201440%20106.768%22%20stroke%3D%22url%28%23paint0_linear_11_136%29%22%20stroke-width%3D%226%22/%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22paint0_linear_11_136%22%20x1%3D%220.49999%22%20y1%3D%2284.9999%22%20x2%3D%221440%22%20y2%3D%2284.9998%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23343045%22/%3E%3Cstop%20offset%3D%220.302083%22%20stop-color%3D%22%23C0B7E8%22/%3E%3Cstop%20offset%3D%220.739583%22%20stop-color%3D%22%238176AF%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23343045%22/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E');
+            position: absolute;
+            z-index: 1;
+            top: 20px;
+            
+
+        }
+        }
+    }
+}

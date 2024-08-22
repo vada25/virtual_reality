@@ -1,3 +1,22 @@
+.fz_64 {
+    color: #343045;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.fz_36 {
+    color: #FFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    &_light {
+        color: #FFF;
+        font-size: 36px;
+        font-weight: 300;
+    }
+}
 .fz_24 {
     color: #FFF;
     font-size: 24px;
@@ -25,4 +44,9 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    &_light {
+        color: #FFF;
+        font-size: 12px;
+        font-weight: 400;
+    }
     }

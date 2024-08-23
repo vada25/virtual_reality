@@ -26,9 +26,7 @@
             overflow: hidden;
             &__round {
                 margin-top: 50px;
-
                 &__name {
-
                     width: 160px;
                     height: 160px;
                     text-align: center;
@@ -62,6 +60,7 @@
                         position: absolute;
                         left: -60px;
                         top: -20px;
+                        animation: moveRight 2s infinite alternate;
                     }
                 }
             }

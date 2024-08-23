@@ -14,12 +14,23 @@
     width: 100%;
     margin: 0 auto;
     background-color: #302C42;
+    
 }
 .divider {
     width: 70%;
     height: 2px;
     background-color: rgba(192, 183, 232, 0.33);
     margin: 0 auto;
+    
+}
+.divider-vertical {
+    height: 12rem;
+    width: 6px;
+    background: linear-gradient(to bottom, #211E2E 0%, #403A5F 50%, #211E2E 100%);
+
+   
+    
+
 }
 
 @import 'blocks/promo';
@@ -29,3 +40,5 @@
 @import 'blocks/cards';
 @import 'blocks/use';
 @import 'blocks/build';
+@import 'blocks/form';
+@import 'blocks/footer';

@@ -1,0 +1,49 @@
+@keyframes gradientAnimation {
+    0% {
+      stop-color: #C0B7E8;
+    }
+    50% {
+      stop-color: #8176AF;
+    }
+    100% {
+      stop-color: #C0B7E8;
+    }
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+  
+#svg_animated  {
+    animation: rotation 10s linear infinite;
+}
+  
+#svg_animated stop {
+    animation: gradientAnimation 5s ease infinite;
+}
+  
+@keyframes moveRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(20px);
+    }
+}
+
+@keyframes rotateIcon {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+}
+
+.footer__wrapper__item__social__icon:hover {
+    animation: rotateIcon 1s linear;
+}

@@ -113,10 +113,10 @@
                     <li class="promo__header__items-item fz_12"><a href="#">technologies</a></li>
                     <li class="promo__header__items-item fz_12"><a href="#">how to</a></li>
                     <li class="promo__header__items-item">
-                        <button class="btn btn__main fz_12">contact us</button>
+                        <button data-modal class="btn btn__main fz_12">contact us</button>
                     </li>
                     <li class="promo__header__items-item">
-                        <button class="btn btn__main__light fz_12">join hydra</button>
+                        <button data-modal class="btn btn__main__light fz_12">join hydra</button>
                     </li>
                 </ul>
             </div>
@@ -125,7 +125,7 @@
                     <h1><span>Dive</span> Into The Depths of <span>Virtual Reality</span></h1>
                     <div class="promo__main__topic__info fz_16">Explore new horizons in virtual reality where the boundaries of the real world fade away. Immerse yourself in unique adventures and experiences that offer extraordinary sensations and perspectives.</div>
                     <div class="promo__main__topic__access">
-                        <button class="btn btn__main__light btn__main__light__big fz_12">BUILD YOUR WORLD</button>
+                        <button data-modal class="btn btn__main__light btn__main__light__big fz_12">BUILD YOUR WORLD</button>
                         <img src="icons/arrow-small-right.svg" alt="arrow">
                     </div>
                 </div>
@@ -239,7 +239,7 @@
                 retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi
                 n tempor.
               </div>
-              <button class="btn btn__main__light btn__main__light__big fz_12 intro__about__descr__btn">
+              <button data-modal class="btn btn__main__light btn__main__light__big fz_12 intro__about__descr__btn">
                 LET’S GET IN TOUCH
               </button>
             </div>
@@ -293,28 +293,28 @@
             <h5 class="cards__line__item__header fz_24">SIMULATION</h5>
             <div class="divider"></div>
             <div class="cards__line__item__descr fz_12_light">VR enables highly realistic simulations, allowing users to experience and interact with complex environments in a safe and controlled manner.</div>
-            <div class="cards__line__item__btn btn btn__main__light fz_12">TRY IT NOW</div>
+            <button data-modal class="cards__line__item__btn btn btn__main__light fz_12">TRY IT NOW</button>
           </div>
           <div class="cards__line__item">
             <img src="img/card_2.png" alt="card_2">
             <h5 class="cards__line__item__header fz_24">EDUCATION</h5>
             <div class="divider"></div>
             <div class="cards__line__item__descr fz_12_light">Virtual Reality revolutionizes education by immersing students in interactive learning experiences that make abstract concepts tangible.</div>
-            <div class="cards__line__item__btn btn btn__main__light fz_12">TRY IT NOW</div>
+            <button data-modal class="cards__line__item__btn btn btn__main__light fz_12">TRY IT NOW</button>
           </div>
           <div class="cards__line__item">
             <img src="img/card_3.png" alt="card_3">
             <h5 class="cards__line__item__header fz_24">SELF-CARE</h5>
             <div class="divider"></div>
             <div class="cards__line__item__descr fz_12_light">VR offers innovative self-care solutions, from guided meditation sessions to virtual wellness retreats, enhancing mental and emotional well-being.</div>
-            <div class="cards__line__item__btn btn btn__main__light fz_12">TRY IT NOW</div>
+            <button data-modal class="cards__line__item__btn btn btn__main__light fz_12">TRY IT NOW</button>
           </div>
           <div class="cards__line__item">
             <img src="img/card_4.png" alt="card_4">
             <h5 class="cards__line__item__header fz_24">OUTDOOR</h5>
             <div class="divider"></div>
             <div class="cards__line__item__descr fz_12_light">With VR, users can explore and enjoy outdoor adventures from the comfort of their homes, bringing the beauty of nature into a virtual space.</div>
-            <div class="cards__line__item__btn btn btn__main__light fz_12">TRY IT NOW</div>
+            <button data-modal class="cards__line__item__btn btn btn__main__light fz_12">TRY IT NOW</b>
           </div>
           <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="820" viewBox="0 0 1440 820" fill="none">
             <path d="M-3 231.214C96.569 254.827 300.21 358.641 318.223 584.988C336.235 811.336 680.641 830.311 850.592 811.505C959 791.003 1139.69 689.084 995.192 445.43C850.692 201.775 1230.86 48.9539 1439 3" stroke="url(#paint0_linear_11_14)" stroke-opacity="0.13" stroke-width="6"/>
@@ -335,7 +335,7 @@
         <div class="use__header">
           <h2 class="fz_36">TECHNOLOGIES & HARDWARE</h2>
           <p class="fz_36_light">USED BY HYDRA VR.</p>
-          <button class="btn btn__main__light__rouded"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+          <button data-modal class="btn btn__main__light__rouded"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
             <path d="M17.5 25L30 37.5L42.5 25" stroke="#433D60" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
           </svg></button>
         </div>
@@ -504,7 +504,7 @@
                 <li><img class="footer__wrapper__item__social__icon" src="icons/social/twitter.svg" alt="twitter"></li>
                 <li><img class="footer__wrapper__item__social__icon" src="icons/social/youtube.svg" alt="youtube"></li>
               </ul>
-              <button class="btn btn__main__light btn__main__light__big fz_12">
+              <button data-modal class="btn btn__main__light btn__main__light__big fz_12">
                 BUILD YOUR WORLD
               </button>
             </div>            
@@ -516,6 +516,19 @@
         </footer>
       </div>
     </section>
+    <div class="modal">
+      <div class="modal__dialog">
+          <div class="modal__content">
+              <form action="#">
+                  <div class="modal__close" data-close>&times;</div>
+                  <div class="modal__title fz_24">We'll call you back</div>
+                  <input required placeholder="Name" name="name" type="text" class="modal__input fz_16">
+                  <input required placeholder="Phone number" name="phone" type="phone" class="modal__input fz_16">
+                  <button class="btn modal__content__btn btn__main__light fz_12">Call me</button>
+              </form>
+          </div>
+      </div>
+  </div>
 
     
     <script src="js/script.js"></script>

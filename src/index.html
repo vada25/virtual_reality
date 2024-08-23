@@ -116,7 +116,7 @@
                         <button data-modal class="btn btn__main fz_12">contact us</button>
                     </li>
                     <li class="promo__header__items-item">
-                        <button data-modal class="btn btn__main__light fz_12">join hydra</button>
+                        <button onclick="location.href='#contact'" class="btn btn__main__light fz_12">join hydra</button>
                     </li>
                 </ul>
             </div>
@@ -125,7 +125,7 @@
                     <h1><span>Dive</span> Into The Depths of <span>Virtual Reality</span></h1>
                     <div class="promo__main__topic__info fz_16">Explore new horizons in virtual reality where the boundaries of the real world fade away. Immerse yourself in unique adventures and experiences that offer extraordinary sensations and perspectives.</div>
                     <div class="promo__main__topic__access">
-                        <button data-modal class="btn btn__main__light btn__main__light__big fz_12">BUILD YOUR WORLD</button>
+                        <button onclick="location.href='#contact'" class="btn btn__main__light btn__main__light__big fz_12">BUILD YOUR WORLD</button>
                         <img src="icons/arrow-small-right.svg" alt="arrow">
                     </div>
                 </div>
@@ -239,7 +239,7 @@
                 retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi
                 n tempor.
               </div>
-              <button data-modal class="btn btn__main__light btn__main__light__big fz_12 intro__about__descr__btn">
+              <button onclick="location.href='#contact'" class="btn btn__main__light btn__main__light__big fz_12 intro__about__descr__btn">
                 LET’S GET IN TOUCH
               </button>
             </div>
@@ -396,7 +396,7 @@
     <section class="contact">
       <div class="container">
         <div class="contact__form">
-          <div class="contact__form__header fz_36"><h2>JOIN HYDRA</h2></div>
+          <div id="contact" class="contact__form__header fz_36"><h2>JOIN HYDRA</h2></div>
           <div class="divider"></div>
           <div class="contact__form__descr fz_36_light">Let’s Build Your VR Experience</div>
           <form action="submit" method="post" class="contact__form__info">
@@ -412,7 +412,7 @@
               <option value="other" class="fz_14">Other</option>
             </select>
             <textarea id="message" name="message" rows="10" placeholder="Tell Us Something..." class="contact__form__info__block fz_14" required></textarea>
-            <button type="submit" class="btn btn__main__light btn__main__light__big fz_16" >SEND TO HYDRA</button>
+            <button type="submit" class="btn btn__main__light btn__main__light__big fz_12" >SEND TO HYDRA</button>
           </form>
         </div>
       </div>
@@ -527,8 +527,8 @@
                   <button class="btn modal__content__btn btn__main__light fz_12">Call me</button>
               </form>
           </div>
+        </div>
       </div>
-  </div>
 
     
     <script src="js/script.js"></script>

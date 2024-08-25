@@ -29,7 +29,17 @@
     background: linear-gradient(to bottom, #211E2E 0%, #403A5F 50%, #211E2E 100%);
 }
 
-
+.scrollup {
+    position: fixed;
+    display: none;
+    right: 5px;
+    bottom: 0;
+    background-color: transparent;
+    z-index: 20;
+    &:hover {
+        animation: moveUp 3s infinite;
+    }    
+}
 
 @import 'blocks/promo';
 @import 'blocks/btn';
@@ -41,3 +51,4 @@
 @import 'blocks/form';
 @import 'blocks/footer';
 @import 'blocks/modal';
+@import 'blocks/dropmenu';

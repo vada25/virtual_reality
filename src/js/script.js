@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    const modalTimerID = setTimeout(openModal, 5000);
+    const modalTimerID = setTimeout(openModal, 8000);
     
     function showModalByScroll() {
         if (window.scrollY + document.documentElement.clientHeight >= document.documentElement.scrollHeight - 1) {
@@ -43,6 +43,26 @@ window.addEventListener('DOMContentLoaded', function() {
             window.removeEventListener('scroll', showModalByScroll);
         }
     }
-
     window.addEventListener('scroll', showModalByScroll);
+
+    //scroll Up
+
+    const scrollUp = document.querySelector('.scrollup');
+    
+    function scrollToTop() {
+        if (window.scrollY > 1000) {
+            scrollUp.style.display = 'block';
+        } else { 
+            scrollUp.style.display = 'none';            
+        }
+    }   
+        
+    window.addEventListener('scroll', scrollToTop);
+    
+    scrollUp.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
 });

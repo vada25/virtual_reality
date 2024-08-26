@@ -1,6 +1,7 @@
 @import 'libs/bootstrap-reboot.min';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
+
 @import 'base/variables';
 @import 'base/mixins';
 
@@ -40,6 +41,8 @@
         animation: moveUp 3s infinite;
     }    
 }
+
+
 
 @import 'blocks/promo';
 @import 'blocks/btn';

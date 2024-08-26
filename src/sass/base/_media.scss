@@ -47,7 +47,7 @@
 
 
 
-@media (min-width: 993px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
     .promo {
         &__header {
             padding: 20px;
@@ -73,8 +73,118 @@
     }
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+
+
+
+
+
+
+@media (max-width: 992px) {
     .main-content {
         display: flex;
+    }
+    .promo {
+        &__main {            
+        display: flex;
+        flex-direction: column-reverse; 
+            &__topic {
+                margin: 0 auto;
+                z-index: 20;
+                h1 {
+                    margin-top: 20px;
+                    text-align: center;                    
+                }
+                &__info {
+                display: none;
+                }
+                &__access {
+                    .btn {
+                        margin: 0 auto;
+                    } img {
+                        display: none;
+                    }
+                }                 
+            }
+            &__view img {
+                width: 115%;
+            }
+        }
+        &__header__items {
+            display: none;
+        }
+        &__contact {            
+            &__visit, &__call, &__msg {
+                position: relative;
+                display: flex;
+                padding: 20px 20px;
+                width: 30%;
+                &__info__header {
+                    font-size: 14px;
+                }
+                &__info__text {
+                    font-size: 10px;
+                    hyphens: auto;
+                }                
+            }   
+        }
+        .divider-vertical {
+            height: 8rem;
+        }
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .promo {
+        &__main {
+            &__view {
+                img {width: 100%;}
+                &__lines {                    
+                    &__three, &__two, &__one {
+                        width: 90%;
+                        left: 0;
+                    }
+                } 
+            }
+        }
+    }
+   
+} 
+
+
+
+@media (max-width: 575px) {
+    .promo {
+        &__main {
+            &__view {
+                img {width: 100%;}
+                &__lines {                    
+                    &__three, &__two, &__one {
+                        width: 80%;
+                        
+                    }
+                } 
+            }
+        }
+    }
+}
+
+@media (max-width: 534px) {
+    .promo {
+        &__main {
+            &__view {
+                width: 80%;
+                & img {
+                    margin-top: 50px;
+                }
+            }
+            &__topic h1 {
+                padding-top: 0;
+            }
+        }
+       
     }
 }

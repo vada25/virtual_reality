@@ -1,6 +1,6 @@
 #container {
   position: relative;
-  width: 600px;   
+  width: 600px;  
 }
 
 #container:after {
@@ -14,19 +14,18 @@
   position: relative;
   float: right;
   width: 100%;
-  padding: 0 20px;  
-  background: #302C42; 
+  padding: 0 20px;   
 }
 
 #menu, #menu ul {
   list-style: none;
-  margin-bottom: 0;
+  margin-bottom: 0;  
 }
 
 #menu > li {
   float: left;
   position: relative; 
-  perspective: 1000px;  
+  perspective: 1000px;    
 }
 
 #menu a {

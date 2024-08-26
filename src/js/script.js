@@ -67,6 +67,11 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
     //slider 
+    const slider = document.querySelector('.slider'),
+        slides = document.querySelectorAll('.slider__item'),
+        prevBtn = document.querySelector('.slider__prev'),
+        nextBtn = document.querySelector('.slider__next');
+    let currentSlide = 0;
 
     
 });

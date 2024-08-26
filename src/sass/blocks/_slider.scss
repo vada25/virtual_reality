@@ -1,0 +1,10 @@
+.slider {
+    overflow: hidden;
+    &__controls {
+        display: none;
+        & img {
+            background-color: #302C42;
+            
+        }  
+    }
+}

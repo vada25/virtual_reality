@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', function() {
     
     //modal
 
-    const modalTrigger = document.querySelectorAll('[data-modal]'),
+  /*   const modalTrigger = document.querySelectorAll('[data-modal]'),
         modal = document.querySelector('.modal'),
         modalClose  = document.querySelector('[data-close]');
     
@@ -64,7 +64,7 @@ window.addEventListener('DOMContentLoaded', function() {
             top: 0,
             behavior: 'smooth'
         });
-    });
+    }); */
 
     //slider 
     const slider = document.querySelector('.slider'),
@@ -73,5 +73,37 @@ window.addEventListener('DOMContentLoaded', function() {
         nextBtn = document.querySelector('.slider__next');
     let currentSlide = 0;
 
-    
+    function updateSliderPosition() {
+        const offset = -currentSlide * 100;
+        slider.style.transform = `translateX(${offset}%)`; 
+    }
+    prevBtn.addEventListener('click', () => {
+        if (currentSlide > 0) {
+            currentSlide--;
+        } else {
+            currentSlide = slides.length - 1;
+        }
+        updateSliderPosition();
+    });
+    nextBtn.addEventListener('click', () => {
+        if (currentSlide < slides.length - 1) {
+            currentSlide++;
+        } else {
+            currentSlide = 0;
+        }
+        updateSliderPosition();
+    });
+    function checkScreenWidth() {
+        if(window.innerWidth <= 768) {
+            prevBtn.style.display = 'block';
+            nextBtn.style.display = 'block';
+        } else {
+            prevBtn.style.display = 'none';
+            nextBtn.style.display = 'none';
+            slider.style.transform = 'translateX(0)';
+            currentSlide = 0;
+        }
+    }
+    checkScreenWidth();
+    window.addEventListener('resize', checkScreenWidth);
 });

@@ -75,7 +75,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     function updateSliderPosition() {
         const offset = -currentSlide * 100;
-        slider.style.transform = `translateX(${offset}%)`; 
+        slider.style.transform = `translateX(${offset}%)`;  
     }
     prevBtn.addEventListener('click', () => {
         if (currentSlide > 0) {

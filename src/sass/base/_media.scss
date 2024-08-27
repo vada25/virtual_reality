@@ -150,11 +150,25 @@
                 } 
             }
         }
+        &__contact {
+            width: 70%;
+            &__visit, &__call, &__msg {
+                max-width: unset;
+                width: unset;
+                min-width: 100%;
+                flex-basis: 100%;
+                display: flex;
+                
+            }
+        }
+
         .slider {
+            display: inline-flex;
             &__controls {
             display: flex;
             }
-            &__item {                
+            &__item {     
+                         
                 min-width: 100%;
                 flex-basis: 100%;
                 text-align: center;
@@ -163,12 +177,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: 18px;                
+                font-size: 18px; 
+                box-sizing: border-box;  
+                
+                              
             }
         }
-        &__contact {
-            width: 70%;
-        }
+       
         .divider-vertical {
             display: none;
         } 

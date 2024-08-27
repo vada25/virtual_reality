@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 20;
+  z-index: 40;
   margin: 0 auto;  
   flex-wrap: wrap;
   justify-content: end; 
@@ -35,14 +35,14 @@
   cursor: pointer;
 }
 
-.menu__item--hamburger:hover .line:nth-child(1), .menu__item--hamburger:focus .line:nth-child(1) {
+.menu__item--hamburger.active .line:nth-child(1), .menu__item--hamburger.active .line:nth-child(1) {
   transform: rotate(45deg) translate(2px, 12px);
 }
-.menu__item--hamburger:hover .line:nth-child(2), .menu__item--hamburger:focus .line:nth-child(2) {
+.menu__item--hamburger.active .line:nth-child(2), .menu__item--hamburger.active .line:nth-child(2) {
   visibility: hidden;
 }
-.menu__item--hamburger:hover .line:nth-child(3), .menu__item--hamburger:focus .line:nth-child(3) {
-  transform: rotate(-45deg) translate(2px, -13px);
+.menu__item--hamburger.active .line:nth-child(3), .menu__item--hamburger.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(2px, -12px);
 }
 
   

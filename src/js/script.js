@@ -106,4 +106,16 @@ window.addEventListener('DOMContentLoaded', function() {
     }
     checkScreenWidth();
     window.addEventListener('resize', checkScreenWidth);
+
+    // Hamburger window
+    document.addEventListener('click', () => {
+        const hamburgerBtn = document.querySelector('.menu__item--hamburger'),
+            container = document.querySelector('#container');
+
+            hamburgerBtn.addEventListener('click', () => {
+                hamburgerBtn.classList.toggle('active');
+                container.classList.toggle('show');
+            });
+    });
+
 });

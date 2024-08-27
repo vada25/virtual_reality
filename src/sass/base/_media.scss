@@ -1,4 +1,4 @@
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
     .promo {
         &__header {
             padding: 20px 44px;
@@ -37,7 +37,30 @@
     .divider-vertical {
         height: 10rem;
     }
-
+    .intro {        
+        &__top, &__about, &__bottom {
+            padding: 40px 20px;
+            align-items: center;
+            
+            & svg {
+                display: none;
+            }
+            &__descr {
+                width: 45%;
+            }
+            & p {
+                margin-bottom: 0;
+            }
+        }
+        &__about {
+            & img {
+                width: 50%;
+            }
+            & .btn {
+                width: 255px;
+            }
+        }        
+    }
 }
 
 
@@ -181,6 +204,13 @@
         & li {
             width: 100%;
         }
+    }
+    .intro {
+        &__top, &__bottom {
+           & img {
+            display: none;
+           } 
+        }
     }  
 }
 
@@ -232,7 +262,31 @@
         .divider-vertical {
             display: none;
         } 
-    }   
+    } 
+    .intro {
+        &__top {
+            &__header {
+                margin: 0 auto;
+                text-align: center;
+            }           
+            &__descr {
+                display: none;
+            }
+        }
+        &__about {
+            display: flex;
+            flex-direction: column;
+            & img {
+                width: 70%;
+            }
+            &__descr {
+                &__header {
+                    display: none;
+                }
+            }
+           
+        }
+    }  
 } 
 
 

@@ -94,6 +94,9 @@
             }             
         }
     }
+    .cards__line svg {
+        display: none;
+    }
 }
 
 
@@ -212,6 +215,13 @@
            } 
         }
     }  
+    .cards__line {
+        flex-wrap: wrap;
+        gap: 20px;
+        &__item {
+            width:  calc(50% - 10px);
+        }
+    }
 }
 
 
@@ -280,13 +290,57 @@
                 width: 70%;
             }
             &__descr {
+                margin-left: unset;
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;               
                 &__header {
                     display: none;
-                }
-            }
-           
+                }                
+            }           
         }
-    }  
+        &__bottom {
+            &__header {
+            margin: 0 auto;
+            text-align: center;
+            }          
+            &__descr {
+                display: none;
+            }
+        }
+    } 
+    .cards {
+        display: flex;
+        & .slider-container {
+            
+            overflow: hidden;
+            width: 100%;
+        }
+        &__line {
+            flex-wrap: nowrap;
+        }
+        & .slider {            
+            display: flex;            
+            transition: transform 0.5s ease-in-out;
+            &__controls {
+                position: relative;
+                display: inline-flex;
+            }
+            &__item {   
+                                 
+                min-width: 100%;
+                box-sizing: border-box;
+                flex-basis: 100%;
+                height: 100%;
+                text-align: center;
+                padding: 20px; 
+                justify-content: center;
+                align-items: center;
+                font-size: 18px; 
+                
+            }
+        }     
+    }    
 } 
 
 
@@ -346,6 +400,18 @@
     }
     .main-content {
         right: -15px;
-    }  
+    } 
+    .intro__top__header span {
+        font-size: 30px;        
+    } 
+    .intro__top__header p {
+        font-size: 30px;        
+    } 
+     .intro__bottom__header span {
+        font-size: 30px;        
+    } 
+    .intro__bottom__header p {
+        font-size: 30px;        
+    } 
     
 }

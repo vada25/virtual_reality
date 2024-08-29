@@ -66,53 +66,7 @@ window.addEventListener('DOMContentLoaded', function() {
         });
     }); */
 
-    //slider 
-    document.querySelectorAll('.slider-container').forEach(container => {
-        const slider = container.querySelector('.slider'),
-              slides = container.querySelectorAll('.slider__item'),
-              prevBtn = container.querySelector('.slider__prev'),
-              nextBtn = container.querySelector('.slider__next');
-        let currentSlide = 0;
     
-        function updateSliderPosition() {
-            const offset = -currentSlide * 100;
-            slider.style.transform = `translateX(${offset}%)`;  
-        }
-    
-        prevBtn.addEventListener('click', () => {
-            if (currentSlide > 0) {
-                currentSlide--;
-            } else {
-                currentSlide = slides.length - 1;
-            }
-            updateSliderPosition();
-        });
-    
-        nextBtn.addEventListener('click', () => {
-            if (currentSlide < slides.length - 1) {
-                currentSlide++;
-            } else {
-                currentSlide = 0;
-            }
-            updateSliderPosition();
-        });
-    
-        function checkScreenWidth() {
-            if(window.innerWidth <= 768) {
-                prevBtn.style.display = 'block';
-                nextBtn.style.display = 'block';
-            } else {
-                prevBtn.style.display = 'none';
-                nextBtn.style.display = 'none';
-                slider.style.transform = 'translateX(0)';
-                currentSlide = 0;
-            }
-        }
-    
-        checkScreenWidth();
-        window.addEventListener('resize', checkScreenWidth);
-    });
-
     // Hamburger window
     document.addEventListener('click', () => {
         const hamburgerBtn = document.querySelector('.menu__item--hamburger'),

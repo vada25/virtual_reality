@@ -251,24 +251,7 @@
                 display: flex;                
             }
         }
-        .slider {
-            display: inline-flex;
-            &__controls {
-            display: flex;
-            }
-            &__item {                       
-                min-width: 100%;
-                flex-basis: 100%;
-                text-align: center;
-                padding: 20px;       
-                height: 100px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 18px; 
-                box-sizing: border-box;
-            }
-        }       
+        
         .divider-vertical {
             display: none;
         } 

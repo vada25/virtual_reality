@@ -1,7 +1,50 @@
 .carousel {
     display: none;
     &-inner {
-        display: flex;
-        overflow: hidden;
+        position: relative;
+        width: 100%;
+        overflow: hidden; 
     }
+    &-item {
+        position: relative;
+        display: none;
+        -webkit-transition: -webkit-transform 0.6s ease;
+        -o-transition: -o-transform 0.6s ease;
+        transition: transform 0.6s ease;
+        &.active {
+            display: block;
+            margin: 0 auto;            
+        }
+
+        
+    }
+    
+
 }
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    width: 15%;
+    height: 100%;
+    
+    
+    
+    border: none;
+    cursor: pointer;
+    
+    
+    
+   
+    transform: translateY(-50%);
+    
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+

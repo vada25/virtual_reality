@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', function() {
     
     //modal
 
-  /*   const modalTrigger = document.querySelectorAll('[data-modal]'),
+    const modalTrigger = document.querySelectorAll('[data-modal]'),
         modal = document.querySelector('.modal'),
         modalClose  = document.querySelector('[data-close]');
     
@@ -64,7 +64,7 @@ window.addEventListener('DOMContentLoaded', function() {
             top: 0,
             behavior: 'smooth'
         });
-    }); */
+    });
 
     
     // Hamburger window

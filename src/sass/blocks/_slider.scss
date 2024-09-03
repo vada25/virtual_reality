@@ -14,37 +14,21 @@
         &.active {
             display: block;
             margin: 0 auto;            
-        }
-
-        
+        }        
     }
-    
-
 }
+
 .carousel-control-prev,
 .carousel-control-next {
     position: absolute;
     top: 50%;
     width: 15%;
     height: 100%;
-    
-    
-    
+    background-color: #302C42;    
     border: none;
-    cursor: pointer;
-    
-    
-    
-   
-    transform: translateY(-50%);
-    
+    cursor: pointer;   
+    transform: translateY(-50%);    
 }
 
-.carousel-control-prev {
-    left: 10px;
-}
 
-.carousel-control-next {
-    right: 0;
-}
 

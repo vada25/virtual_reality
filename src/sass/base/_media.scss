@@ -255,6 +255,28 @@
         .divider-vertical {
             display: none;
         } 
+    .carousel {
+        position: relative;
+        &-item {
+            display: none;
+            &.active {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 150px;
+            }
+        }
+        }
+
+        .carousel-control-prev {
+            position: absolute;
+            left: -60px;
+        }
+        .carousel-control-next {
+            position: absolute;
+            right: -60px;
+        }
+
     } 
     .intro {
         &__top {
@@ -294,6 +316,25 @@
     } 
     .carousel {
         display: block;
+        
+    }
+    .cards {
+        &__line {
+            padding: 20px;
+        }
+    }
+    .btn__main__light__rouded {
+        position: unset;
+        height: 40px;
+        width: 40px;
+        
+    }
+    .carousel-control-prev {
+        left: 16%;    
+    }
+    
+    .carousel-control-next {
+        right: 16%;
     }
    
 
